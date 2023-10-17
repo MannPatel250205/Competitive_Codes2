@@ -49,7 +49,6 @@ void aa_rahyo_code(){
             sum = sum + (e * (n - i));
         }
         
-        // d = d + (n * ((x - sum - i) / n + 1));
         sum = sum - (a[n - 1 - i] + c);
     }
     
