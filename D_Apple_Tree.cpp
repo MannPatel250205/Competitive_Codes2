@@ -1,12 +1,4 @@
-/**
- *    AUTHOR :- MP25
- *    DATE   :- 05/01/2024
- *    TIME   :- 21:30:48
-**/
-
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 #define vel vector<long long>
 #define pal pair<long long, long long>
 #define mal map<long long, long long>
@@ -15,10 +7,8 @@
 #define srt(a) sort(all(a))
 #define srtd(a) sort(all(a), greater<long long>())
 #define fast ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
-#define ordered_set tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update>
 /***************                NEVER MIND THIS CODE                ***************/
 using namespace std;
-using namespace __gnu_pbds;
 long long n, x, y, q;
 bool cmp(pal &a, pal &b){
     if (a.first != b.first)
