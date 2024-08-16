@@ -1,9 +1,3 @@
-/**
- *    AUTHOR :- MP25
- *    DATE   :- 30/07/2024
- *    TIME   :- 11:51:49
-**/
-
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -85,7 +79,6 @@ void aa_rahyo_code(){
     for (int i = 0; i < n + 1; i++)
     {
         ans += dp[i];
-        // cout << dp[i] << ' ';
     }
 
     cout << ans << '\n';
