@@ -1,9 +1,3 @@
-/**
- *    AUTHOR :- MP25
- *    DATE   :- 06/09/2024
- *    TIME   :- 20:34:38
-**/
-
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -16,50 +10,10 @@
 #define srtd(a) sort(all(a), greater<long long>())
 #define fast ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define ordered_set tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update>
-/****************                NEVER MIND THIS CODE                ****************/
 using namespace std;
 using namespace __gnu_pbds;
 long long n, m, d, k;
-bool cmp(pal &a, pal &b){
-    if (a.first != b.first)
-    {
-        return (a.first >= b.first);
-    }
-    else
-    {
-        return (a.second <= b.second);
-    }
-}
 
-long long binpow(long long a, long long b) {
-    long long res = 1;
-    while (b > 0) {
-        if (b & 1)
-        {
-            res = res * a;
-        }
-        a = a * a;
-        b >>= 1;
-    }
-    return res;
-}
-
-bool isprime(long long n){
-    if (n < 2)
-    {
-        return false;
-    }
-    for (long long i = 2; i <= sqrt(n); i++)
-    {
-        if (n % i == 0)
-        {
-            return false;
-        }
-    }
-    return true;
-}
-
-/****************            Ha bas, aa rahyo code            ****************/
 void aa_rahyo_code(){
     cin >> n >> m >> k >> d;
     
@@ -86,10 +40,6 @@ void aa_rahyo_code(){
             dp[i] = min(dp[i], *(s.begin()) + a[i] + 1);
             s.insert(dp[i]);
         }
-        // for (auto &it : dp)
-        // {
-        //     cout << it << ' ';
-        // }
         b.push_back(dp[m - 1]);
     }
     
